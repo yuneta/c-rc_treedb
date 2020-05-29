@@ -271,9 +271,10 @@ PRIVATE int dba_create_table(
     treedb_create_topic(
         pDb,
         kw_get_str(pDb, "database", "", KW_REQUIRED), // treedb_name
-        tablename, // topic_name
-        "1",       // topic_version
-        "",        // topic_options
+        tablename,  // topic_name
+        "1",        // topic_version
+        "",         // tkey
+        0,          // pkey2
         cols, // owned
         0,
         0
