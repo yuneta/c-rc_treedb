@@ -274,7 +274,9 @@ PRIVATE int dba_create_table(
         tablename, // topic_name
         "1",       // topic_version
         "",        // topic_options
-        cols // owned
+        cols, // owned
+        0,
+        0
     );
 
     KW_DECREF(kw_fields);
